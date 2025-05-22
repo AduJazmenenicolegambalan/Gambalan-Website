@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Gallery </title>
+  <style>
+ body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #ffe6f0;
+  color: #6c3483;
+  padding: 40px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 30px;
+  color: #8e44ad;
+  margin-bottom: 40px;
+  font-weight: bold;
+  text-shadow: 1px 1px #fff;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  justify-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery img,
+.gallery video {
+  width: 100%;
+  max-width: 250px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 2px solid transparent;
+  background: #fff;
+  box-shadow: 0 6px 15px rgba(255, 105, 180, 0.3);
+  transition: transform 0.3s ease, border 0.3s ease;
+}
+
+.gallery img:hover,
+.gallery video:hover {
+  transform: scale(1.05);
+  border: 2px solid #ff9a44;
+  box-shadow: 0 6px 20px rgba(255, 105, 180, 0.5);
+}
+
+video {
+  background-color: #fce4ec;
+}
+  </style>
+</head>
+<body>
+
+  <h1>VIDEO AND IMAGES</h1>
+
+  <div class="gallery">
+   
+    <img src="pic1.jpg" alt="Photo 1">
+    <img src="pic2.jpg" alt="Photo 2">
+    <img src="pic3.jpg" alt="Photo 3">
+    <img src="pic 4.jpg" alt="Photo 4">
+
+    
+    <video controls autoplay>
+      <source src="Download (1).mp4" type="video/mp4">
+     
+    </video>
+    <video controls autoplay>
+      <source src="Download (2).mp4" type="video/mp4">
+      
+    </video>
+    <video controls autoplay>
+      <source src="Download (3).mp4" type="video/mp4">
+      
+    </video>
+    <video controls autoplay>
+      <source src="Download (4).mp4" type="video/mp4">
+   
+    </video>
+  </div>
+  
+  
+
+</body>
+</html>
